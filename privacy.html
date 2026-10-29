@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How the personal Flight-Importer desktop app accesses, uses, stores, and protects Google user data.">
+  <title>Privacy policy · Flight-Importer</title>
+  <style>
+    :root{color-scheme:light;font:17px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#172338;background:#f4f6fa}*{box-sizing:border-box}body{margin:0}header,main,footer{max-width:850px;margin:auto;padding:28px 26px}header{display:flex;justify-content:space-between;gap:20px;align-items:center}a{color:#164b96;text-underline-offset:4px}nav a{margin-left:18px}a:focus-visible{outline:3px solid #e5a800;outline-offset:4px}.brand{font-weight:750;color:#172338;text-decoration:none}main{padding-top:35px;padding-bottom:64px}h1{font-size:clamp(2rem,6vw,3rem);line-height:1.15;letter-spacing:-.035em;margin:12px 0 22px}h2{font-size:1.2rem;margin:30px 0 10px}ul{padding-left:23px}li{margin:9px 0}footer{border-top:1px solid #dbe1ea;font-size:.85rem;color:#52657d}p{margin:12px 0}.small{font-size:.9rem;color:#52657d}@media(max-width:500px){header{align-items:flex-start;flex-direction:column;gap:8px}nav a{margin:0 18px 0 0}}
+  </style>
+</head>
+<body>
+  <header><a class="brand" href="./">Flight-Importer</a><nav aria-label="Main navigation"><a href="./">About</a><a href="privacy.html" aria-current="page">Privacy</a></nav></header>
+  <main>
+    <h1>Privacy policy</h1>
+    <p class="small">Effective October 29, 2026</p>
+    <p>This policy describes the personal-use Flight-Importer desktop companion and its information website. The app is operated by its owner for personal travel management.</p>
+    <h2>Data accessed</h2>
+    <p>With the owner's authorization, the desktop app uses read-only Gmail access to read messages and attachments in a dedicated flight-import mailbox. Read-only permission covers that mailbox's messages and settings. The app's code verifies the expected mailbox address before saving authorization. It does not request Google Drive, Calendar, Gmail sending, or Gmail modification permissions.</p>
+    <p>Relevant information may include message identifiers and dates, booking references, ticket numbers, passenger names, itineraries, fare products, miles or cash paid, taxes and fees, and cancellation or refund details. Airline emails can also contain unrelated account or payment information; such information is not needed for fare monitoring.</p>
+    <h2>Purpose and use</h2>
+    <p>Data is used to identify reservation events, avoid duplicate imports, reconcile tickets and passenger records, identify missing information, and support the owner's flight fare monitoring. Historical examples are processed in review mode without automatically applying their cancellations or creating new reservations.</p>
+    <p>When live importing is enabled, verified records can update the monitor and generate missing-receipt reminders through the owner's existing notification channel. The app does not itself purchase, cancel, or change airline tickets.</p>
+    <h2>Storage and protection</h2>
+    <p>The companion runs on the owner's PC. Google authorization credentials are encrypted using Windows protection for the owner's Windows account and stored outside the synced project folder. Downloaded email data and analysis files may be retained locally for processing and troubleshooting. Reservation snapshots, derived analysis, and published monitoring results may be stored in the owner's configured private sync folder and synchronized to the owner's other computers.</p>
+    <p>Records remain until the owner deletes them. Revoking Google access stops future authorized mailbox access but does not delete previously downloaded records, synced copies, or backups. The owner can delete these files from the PC and configured sync storage, and manage any retained copies through the relevant storage service.</p>
+    <h2>External services and human review</h2>
+    <p>The fare monitor sends the itinerary details needed to obtain prices or create alerts, such as airports, dates, flight numbers, cabin, passenger count, and price thresholds, to the owner's configured flight-data services. These can include Google Flights, Seats.aero, SerpApi, and Bright Data. The monitor does not need to forward complete email bodies or original attachments to these providers.</p>
+    <p>Notification services receive the reservation details included in the owner's fare alerts or receipt reminders. The owner's configured sync service stores the files selected for synchronization. If the owner chooses to share message examples or diagnostics with an assistant or other support service, those selected contents are processed by that service under its own terms and privacy settings. This is separate from routine mailbox parsing.</p>
+    <p>The app does not sell Google user data, use it for advertising, or use it to train generalized AI or machine-learning models. The app's use and transfer of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements.</p>
+    <h2>Control and revocation</h2>
+    <p>The owner can disconnect the app through <a href="https://myaccount.google.com/connections">Google Account connections</a> and remove its encrypted local authorization file. Authorization can also stop working if Google revokes or expires it. Reconnecting requires the owner's approval.</p>
+    <h2>This public website</h2>
+    <p>These static pages contain no mailbox connection, email upload form, advertising, or app analytics. GitHub Pages hosts the website and may process ordinary website-access information according to <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>. Reservation data and authorization credentials are not published on this site.</p>
+    <h2>Contact and updates</h2>
+    <p>For privacy or support questions, use the user-support email displayed on the app's Google authorization screen. This policy will be updated if the app's handling of Google user data changes.</p>
+  </main>
+  <footer>Flight-Importer · <a href="./">Application homepage</a> · Updated October 29, 2026</footer>
+</body>
+</html>

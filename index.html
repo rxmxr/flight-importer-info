@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Flight-Importer is a personal desktop companion for organizing airline receipts, cancellations, and fare monitoring.">
+  <title>Flight-Importer</title>
+  <style>
+    :root{color-scheme:light;font:17px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#172338;background:#f4f6fa}*{box-sizing:border-box}body{margin:0}header,main,footer{max-width:850px;margin:auto;padding:28px 26px}header{display:flex;justify-content:space-between;gap:20px;align-items:center}a{color:#164b96;text-underline-offset:4px}nav a{margin-left:18px}a:focus-visible{outline:3px solid #e5a800;outline-offset:4px}.brand{font-weight:750;color:#172338;text-decoration:none}main{padding-top:45px;padding-bottom:64px}h1{font-size:clamp(2.1rem,6vw,3.3rem);line-height:1.12;letter-spacing:-.04em;margin:12px 0 24px}h2{font-size:1.35rem;margin:30px 0 12px}.eyebrow{color:#52657d;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700}.lead{font-size:1.18rem;max-width:700px}.card{background:white;border:1px solid #dbe1ea;border-radius:15px;padding:24px 28px;margin-top:26px}ul{padding-left:23px}li{margin:9px 0}footer{border-top:1px solid #dbe1ea;font-size:.85rem;color:#52657d}p{margin:12px 0}.small{font-size:.9rem;color:#52657d}@media(max-width:500px){header{align-items:flex-start;flex-direction:column;gap:8px}nav a{margin:0 18px 0 0}.card{padding:20px}}
+  </style>
+</head>
+<body>
+  <header><a class="brand" href="./">Flight-Importer</a><nav aria-label="Main navigation"><a href="./" aria-current="page">About</a><a href="privacy.html">Privacy</a></nav></header>
+  <main>
+    <div class="eyebrow">A personal desktop companion</div>
+    <h1>Keep flight records<br>in step with your bookings.</h1>
+    <p class="lead">Flight-Importer is a personal-use extension to a flight fare monitor. It is designed to organize airline confirmation emails, receipts, cancellations, and changes into accurate reservation records.</p>
+    <section class="card" aria-labelledby="purpose">
+      <h2 id="purpose">What the app does</h2>
+      <ul>
+        <li>Reads messages and attached original emails from the owner's dedicated import mailbox.</li>
+        <li>Extracts ticket references, passenger details, flight dates and numbers, fare products, and amounts paid in cash or miles.</li>
+        <li>Matches receipts and cancellation notices to the correct tickets, and flags incomplete or ambiguous information for review.</li>
+        <li>Uses confirmed reservation details with the owner's fare monitor to check prices and manage applicable award alerts.</li>
+      </ul>
+      <p class="small">The mailbox connection currently starts in review mode. Automatic reservation changes and receipt reminders require the importer to be enabled after validation.</p>
+    </section>
+    <section aria-labelledby="access">
+      <h2 id="access">Google account access</h2>
+      <p>The desktop app requests read-only Gmail access to the dedicated mailbox selected by its owner. The app verifies the expected mailbox address before saving a connection. Its requested permission does not allow it to send, delete, or modify Gmail messages, or access Google Drive or Calendar.</p>
+      <p>The companion runs on the owner's PC. This public website provides information only; it does not accept receipts, connect mailboxes, or display reservation data.</p>
+      <p><a href="privacy.html">Read the privacy policy</a> for details about data use, storage, external services, and revoking access.</p>
+    </section>
+    <section aria-labelledby="personal">
+      <h2 id="personal">For personal use</h2>
+      <p>Flight-Importer is operated by its owner for personal travel management. It is not a public booking service, and it does not purchase, cancel, or change tickets with an airline. For questions, use the user-support email shown on its Google authorization screen.</p>
+    </section>
+  </main>
+  <footer>Flight-Importer · <a href="privacy.html">Privacy policy</a> · Updated October 29, 2026</footer>
+</body>
+</html>
